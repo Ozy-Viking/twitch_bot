@@ -1,0 +1,3 @@
+# Full
+
+::: template_package

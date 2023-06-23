@@ -1,0 +1,9 @@
+from _typeshed import Incomplete
+from typing import Optional
+
+class Pi:
+    n_values: Incomplete
+    def __init__(self, number_of_decimals: int = ...) -> None: ...
+    def round(self, number_of_decimals: Optional[int] = ...) -> Pi: ...
+    @property
+    def pi(self) -> float: ...
