@@ -1,3 +1,3 @@
 # Full
 
-::: template_package
+::: twitch_bot

@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: Template Project
+site_name: Twitch Bot
 
 theme:
   name: material
@@ -36,8 +36,8 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
 
-repo_name: Ozy-Viking/template
-repo_url: https://github.com/Ozy-Viking/template
+repo_name: Ozy-Viking/twitch_bot
+repo_url: https://github.com/Ozy-Viking/twitch_bot
 edit_uri: edit/main/docs/
 
 markdown_extensions:
@@ -97,4 +97,4 @@ extra_css:
 #  - "Readme": '../../'
 use_directory_urls: true
 watch:
-  - template_package
+  - src

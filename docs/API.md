@@ -2,7 +2,7 @@
 
 ## Square
 
-::: template_package.square
+::: twitch_bot.square
     handler: python
     options:
       show_root_heading: false
@@ -10,7 +10,7 @@
 
 ## Pi
 
-::: template_package.stubby.Pi
+::: twitch_bot.stubby.Pi
     handler: python
     options:
       heading_level: 2
@@ -18,7 +18,7 @@
 
 ## UI
 
-::: template_package.ui
+::: twitch_bot.ui
     handler: python
     options:
       heading_level: 2

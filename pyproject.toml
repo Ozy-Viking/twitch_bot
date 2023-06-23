@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "template_package"
+name = "twitch_bot"
 version = "1.2.1"
-description = "A Template python package"
+description = "A Twitch Bot"
 authors = ["Zack Hankin <zthankin@gmail.com>"]
 readme = "README.md"
-repository = "https://github.com/Ozy-Viking/template"
-documentation = "https://ozy-viking-template.readthedocs.io"
-packages = [{include = "template_package"}]
+repository = "https://github.com/Ozy-Viking/twitch_bot"
+documentation = "https://ozy-viking-twitch-bot.readthedocs.io"
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 setuptools = "^67.6.0"
@@ -36,11 +36,10 @@ docs = ['mkdocs', 'mkdocs-autorefs', 'mkdocs-git-revision-date-localized-plugin'
 dev = ['mypy', 'tox', 'pytest']
 
 [tool.poetry.scripts]
-square = "template_package:main"
 
 [tool.mypy]
 mypy_path = '$MYPY_CONFIG_FILE_DIR'
-files = '$MYPY_CONFIG_FILE_DIR/template_package'
+files = '$MYPY_CONFIG_FILE_DIR/twitch_bot'
 explicit_package_bases = false
 ignore_missing_imports = true
 exclude = [
