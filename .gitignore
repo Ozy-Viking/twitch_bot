@@ -7,3 +7,4 @@ poetry.lock
 **_cache/
 _build
 site
+.env
