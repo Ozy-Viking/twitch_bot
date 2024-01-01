@@ -1,0 +1,53 @@
+
+
+html,
+body,
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+#container {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.falling-element {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-size: 100%;
+}
+
+.lurking-element {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background-size: 100%;
+}
+
+
+
+#display {
+    color: var(--font-colour);
+    text-shadow: 2px 0 var(--shadow-colour), -2px 0 var(--shadow-colour),
+        0 2px var(--shadow-colour), 0 -2px var(--shadow-colour),
+        1px 1px var(--shadow-colour), -1px -1px var(--shadow-colour),
+        1px -1px var(--shadow-colour), -1px 1px var(--shadow-colour);
+    font-size: 40px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    word-wrap: break-word;
+}
+
+.centre {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

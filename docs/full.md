@@ -1,3 +1,0 @@
-# Full
-
-::: twitch_bot

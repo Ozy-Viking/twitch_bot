@@ -15,9 +15,6 @@ mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
 
-# If using Sphinx, optionally build your docs in additional formats such as PDF
-#formats: all
-
 python:
   install:
     - method: pip
