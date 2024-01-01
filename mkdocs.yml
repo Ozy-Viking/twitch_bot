@@ -1,9 +1,12 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Twitch Bot
 
+site_dir: docs/templates/docs
+docs_dir: docs/docs
+
 theme:
   name: material
-  favicon: img/favicon.png
+  favicon: assets/images/favicon.svg
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
@@ -42,16 +45,14 @@ edit_uri: edit/main/docs/
 
 markdown_extensions:
   - admonition
-  - codehilite
   - toc:
       permalink: '#'
   - tables
   - attr_list
   - footnotes
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
@@ -60,11 +61,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #         - name: mermaid
+  #           class: mermaid
+  #           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
         alternate_style: true
 
@@ -74,27 +75,32 @@ extra:
   version:
     provider: mike
     default:
-      - stable
-      - development
+      - latest
 plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       enabled: !ENV [CI, false]
   - search:
   - tags
-  - autorefs
+  # - autorefs
   - mkdocstrings
   - mike:
       canonical_version: latest
+      version_selector: true
+      css_dir: assets/stylesheets
+      javascript_dir: assets/javascripts
+      # deploy_prefix: 'docs/'
+  - offline
 
 extra_css:
-    - css/custom.css
+    - assets/stylesheets/custom.css
 
-#nav:
-#  - "Home": "."
-#  - "API": API.md
-#  - "Full": full.md
-#  - "Readme": '../../'
 use_directory_urls: true
+
 watch:
-  - src
+  - frontend
+  - api
+  - twitch_bot
+exclude_docs: |
+  *.py
+  __pycache__/
