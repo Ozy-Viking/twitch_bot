@@ -24,7 +24,7 @@ If you get an `:::py3 TypeError`[^1]
 Here is some code:
 
 ``` { .yaml .annotate }
-import pymdownx; pymdownx.__version__ 
+import pymdownx; pymdownx.__version__
 ``` [^2]
 
 [^2]:

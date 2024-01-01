@@ -1,7 +1,7 @@
 /**
  * Deletes an HTML element.
- * @param {string} ID - ID of the element to be deleted.  
- * @param {boolean} debug - Console.log(element) before deleting  
+ * @param {string} ID - ID of the element to be deleted.
+ * @param {boolean} debug - Console.log(element) before deleting
  */
 export default function removeElement(ID, debug = false) {
     if (debug) { console.debug("ID", ID) }

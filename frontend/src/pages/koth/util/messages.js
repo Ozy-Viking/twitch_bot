@@ -25,4 +25,3 @@ function generateEndingMessage() {
         return `The fight is coming to an end! Get back, Back, no more people. OI! Who threw ${randWeapon['tense 2']} ${randWeapon.name}!?!`;
     }
 };
-

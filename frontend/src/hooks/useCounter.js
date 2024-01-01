@@ -10,4 +10,4 @@ export default function useCounter(initial = 0) {
     }
 
     return [counter, increaseCounter]
-}   
+}

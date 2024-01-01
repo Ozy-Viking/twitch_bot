@@ -75,19 +75,19 @@ export default function FightSquare() {
     //         </User>,
     //     ];
     //     console.log(render);
-    
+
     // {/* // id="fight_square"
     // // className="confetti-container" */}
     return (
         <>
-        
+
                 <User key={0} uid={0} username={"Ozy_Viking"}>
                     <Weapon lowerMessage={"King"} />
                 </User>
                 <User key={1} uid={1} username={"JDPlays"}>
                     <Weapon lowerMessage={"King"} />
                 </User>
-            
+
         </>
     );
 }
